@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./navbar.css";
+import Logo from "../../assets/logo.svg";
 
 function NavBar() {
   const [value, setValue] = useState("");
@@ -11,7 +12,10 @@ function NavBar() {
   return (
     <nav className="navbar">
       <div className="main-nav">
-        <h1 className="logo">JEWELRY PARTS</h1>
+        <a href="#">
+          <img src={Logo} alt="Jewelry Parts Logo" className="logo" />
+        </a>
+
         <ul className="main-nav-list">
           <li>
             <a className="main-nav-link" href="#new">
