@@ -1,8 +1,8 @@
 import React from "react";
-import "./NewProductSection.css";
+import "./MoreProduct.css";
 import Card from "../Card/Card";
 
-function NewProductSection() {
+function MoreProduct() {
   const products = [
     { color: "#ffcccb", name: "Product 1" },
     { color: "#add8e6", name: "Product 2" },
@@ -14,12 +14,6 @@ function NewProductSection() {
     <div className="newproduct-section">
       <div className="container center-text">
         <h2 className="sub-heading">NEW PRODUCTS</h2>
-        <ul className="link-list">
-          <li>Link</li>
-          <li>Link</li>
-          <li>Link</li>
-          <li>Link</li>
-        </ul>
       </div>
 
       <div className="container card-box">
@@ -31,4 +25,4 @@ function NewProductSection() {
   );
 }
 
-export default NewProductSection;
+export default MoreProduct;
