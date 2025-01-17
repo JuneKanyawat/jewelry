@@ -7,26 +7,53 @@ function NavBar() {
   const handleChange = (event) => {
     setValue(event.target.value);
   };
+
   return (
     <nav className="navbar">
-      <h1 className="nav-title">JEWELRY PARTS</h1>
-      <div className="navbar-left">
-        <div className="search-container">
-          <input
-            id="inputBox"
-            type="text"
-            value={value}
-            onChange={handleChange}
-            placeholder="Search"
-            className="search-input"
-          />
-          <i className="fa-solid fa-magnifying-glass search-icon"></i>
-        </div>
+      <div className="main-nav">
+        <h1 className="logo">JEWELRY PARTS</h1>
+        <ul className="main-nav-list">
+          <li>
+            <a className="main-nav-link" href="#new">
+              New
+            </a>
+          </li>
+          <li>
+            <a className="main-nav-link" href="#type1">
+              Type 1
+            </a>
+          </li>
+          <li>
+            <a className="main-nav-link" href="#type2">
+              Type 2
+            </a>
+          </li>
+          <li>
+            <a className="main-nav-link" href="#type3">
+              Type 3
+            </a>
+          </li>
+          <li>
+            <a className="main-nav-link" href="#collection">
+              Collection
+            </a>
+          </li>
+          <li>
+            <a className="main-nav-link" href="#contact-us">
+              Contact Us
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div className="sub-nav">
         <button className="nav-btn">
-          <i class="fa-regular fa-heart"></i>
+          <i className="fa-solid fa-magnifying-glass"></i>
         </button>
         <button className="nav-btn">
-          <i class="fa-regular fa-user"></i>
+          <i className="fa-regular fa-heart"></i>
+        </button>
+        <button className="nav-btn">
+          <i className="fa-regular fa-user"></i>
         </button>
       </div>
     </nav>

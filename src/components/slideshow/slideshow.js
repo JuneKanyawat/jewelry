@@ -17,9 +17,9 @@ function SlideShow() {
     if (isPlaying) {
       interval = setInterval(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-      }, 5000); // Change image every 5 seconds
+      }, 5000);
     }
-    return () => clearInterval(interval); // Cleanup interval on unmount
+    return () => clearInterval(interval);
   }, [isPlaying, images.length]);
 
   const handlePrev = () => {
@@ -55,7 +55,7 @@ function SlideShow() {
         ))}
       </div>
       <div className="slideshow-control">
-        <button className="arrow" onClick={handlePrev}>
+        <button className="slideshow-btn" onClick={handlePrev}>
           <i class="fa-solid fa-angle-left"></i>
         </button>
         <div className="dots-container">
@@ -67,10 +67,10 @@ function SlideShow() {
             ></span>
           ))}
         </div>
-        <button className="arrow" onClick={handleNext}>
+        <button className="slideshow-btn" onClick={handleNext}>
           <i class="fa-solid fa-angle-right"></i>
         </button>
-        <button className="arrow" onClick={togglePlay}>
+        <button className="slideshow-btn" onClick={togglePlay}>
           {isPlaying ? (
             <i class="fa-solid fa-stop"></i>
           ) : (
