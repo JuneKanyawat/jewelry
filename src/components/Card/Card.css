@@ -1,0 +1,18 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card-image {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 1rem;
+  border-radius: 8px; /* Optional, for rounded corners */
+}
+
+.card-name {
+  font-size: 1.4rem;
+  color: #333;
+}
