@@ -23,16 +23,24 @@
 .sub-heading {
   font-size: 2rem;
   color: var(--text-color);
-  margin-bottom: 1.6rem;
+  margin-bottom: 2.4rem;
   margin-top: 0;
 }
 
 .container {
-  max-width: 120rem;
+  max-width: 100rem;
   padding: 0 3.2rem;
   margin: 0 auto;
 }
 
 .center-text {
   text-align: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid--2--cols {
+  grid-template-columns: repeat(2, 1fr);
 }

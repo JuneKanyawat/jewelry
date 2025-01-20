@@ -1,11 +1,17 @@
 import React from "react";
 import "./Card.css";
 
-function Card({ color, name }) {
+function Card({ image, name, price }) {
   return (
     <div className="card">
-      <div className="card-image" style={{ backgroundColor: color }}></div>
-      <p className="card-name">{name}</p>
+      <figure className="gallery-item">
+        <img src={image} alt={name} />
+      </figure>
+
+      <div className="card-content">
+        <p className="card-name">{name}</p>
+        <p className="card-price">{price}</p>
+      </div>
     </div>
   );
 }
